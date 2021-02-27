@@ -145,7 +145,7 @@ class Weakness(AbstractNegative):
         Decrease: Strength, Endurance, Agility on 4
         """
         stats = self.base.get_stats()
-        # уменьшает характеристики: Сила, Выносливость, Ловкость на 4.
+
         stats['Strength'] -= 4
         stats['Endurance'] -= 4
         stats['Agility'] -= 4
@@ -170,7 +170,7 @@ class EvilEye(AbstractNegative):
         Decrease: Luck on 10
         """
         stats = self.base.get_stats()
-        # уменьшает  характеристику Удача на 10.
+
         stats['Luck'] -= 10
 
         return stats
